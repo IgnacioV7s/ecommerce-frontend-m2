@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrito - ivCommerce</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="Main navigation">
+        <div class="container mx-auto">
+          <a class="navbar-brand text-white" href="index.html">ivCommerce</a>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link active" href="cart.html">Carrito <span id="cart-count" class="badge bg-danger ms-1">0</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-4">
+      <h1>Tu carrito</h1>
+      <section id="cart-items" class="mt-4" aria-live="polite"></section>
+
+      <div id="cart-empty" class="alert alert-info mt-3" role="alert" style="display:none;">
+        Tu carrito está vacío. <a href="index.html">Ver productos</a>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white pt-4 mt-auto">
+      <div class="container text-center py-3">© 2025 ivCommerce</div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
